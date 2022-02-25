@@ -3,14 +3,14 @@ pipeline {
     stages {
         stage('build') {
                 steps {
-                        echo 'Running the build...'
+                        echo 'Running the first build '
 			
                 }
         }
 	    stage('test: integration-&-quality'){
 		    
 		steps {
-			input('Do you want to proceed?')
+			input('Do you want to continue ?')
         }
 	    }
         stage('test: functional') {
